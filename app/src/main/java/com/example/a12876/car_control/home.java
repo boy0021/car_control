@@ -34,7 +34,7 @@ package com.example.a12876.car_control;
 //            }
 //        });
 //    }
-//}
+//}history
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -44,7 +44,7 @@ import android.widget.EditText;
 public class home extends Activity implements View.OnClickListener{
     Button bt_0,bt_1,bt_2,bt_3,bt_4,bt_5,bt_6,bt_7,bt_8,bt_9,bt_pt;
     Button bt_mul,bt_div,bt_add,bt_sub;
-    Button bt_clr,bt_del,bt_eq;
+    Button bt_clr,bt_del,bt_eq,bt_history;
     EditText et_input;
     boolean clr_flag;    //判断et中是否清空
     @Override
@@ -71,6 +71,7 @@ public class home extends Activity implements View.OnClickListener{
         bt_del= (Button) findViewById(R.id.bt_del);
         bt_eq= (Button) findViewById(R.id.bt_eq);
         et_input= (EditText) findViewById(R.id.et_input);
+        bt_history = (Button) findViewById(R.id.history);
 
         //设置按钮的点击事件
         bt_0.setOnClickListener(this);
@@ -91,6 +92,15 @@ public class home extends Activity implements View.OnClickListener{
         bt_clr.setOnClickListener(this);
         bt_del.setOnClickListener(this);
         bt_eq.setOnClickListener(this);
+        bt_history.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+                android.content.Intent intent = new android.content.Intent(home.this,first_page.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
     @Override

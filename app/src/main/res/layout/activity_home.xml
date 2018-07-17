@@ -2,11 +2,12 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".home"
-    >
+    tools:context=".home">
 
     <EditText
         android:id="@+id/et_input"
@@ -192,83 +193,96 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginTop="10dp"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
+
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
                     android:id="@+id/bt_1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="#00ffff"
+                    android:gravity="right|bottom"
+                    android:paddingBottom="15sp"
+                    android:paddingRight="15sp"
                     android:text="1"
-                    android:textSize="30sp"
-                    android:gravity="right|bottom"
-                    android:background="#00ffff"
-                    android:paddingRight="15sp"
-                    android:paddingBottom="15sp"
-                    />
+                    android:textSize="30sp" />
+
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
                     android:id="@+id/bt_2"
-                    android:text="2"
-                    android:textSize="30sp"
-                    android:gravity="right|bottom"
-                    android:layout_marginLeft="10dp"
-                    android:background="#00ffff"
-                    android:paddingRight="15sp"
-                    android:paddingBottom="15sp"
-                    />
-                <Button
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:id="@+id/bt_3"
-                    android:text="3"
-                    android:textSize="30sp"
-                    android:gravity="right|bottom"
                     android:layout_marginLeft="10dp"
                     android:background="#00ffff"
-                    android:paddingRight="15sp"
+                    android:gravity="right|bottom"
                     android:paddingBottom="15sp"
-                    />
+                    android:paddingRight="15sp"
+                    android:text="2"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/bt_3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#00ffff"
+                    android:gravity="right|bottom"
+                    android:paddingBottom="15sp"
+                    android:paddingRight="15sp"
+                    android:text="3"
+                    android:textSize="30sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
                 <Button
-                    android:layout_width="170dp"
-                    android:layout_height="80dp"
                     android:id="@+id/bt_0"
-                    android:text="0"
-                    android:textSize="30sp"
-                    android:gravity="right|bottom"
+                    android:layout_width="77dp"
+                    android:layout_height="80dp"
                     android:background="#00ffff"
-                    android:paddingRight="15sp"
+                    android:gravity="right|bottom"
                     android:paddingBottom="15sp"
-                    />
+                    android:paddingRight="15sp"
+                    android:text="0"
+                    android:textSize="30sp" />
+
                 <Button
+                android:id="@+id/bt_pt"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:background="#00ffff"
+                android:gravity="right|bottom"
+                android:paddingBottom="15sp"
+                android:paddingRight="15sp"
+                android:text="."
+                android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/history"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:id="@+id/bt_pt"
-                    android:text="."
-                    android:textSize="30sp"
-                    android:gravity="right|bottom"
                     android:layout_marginLeft="10dp"
                     android:background="#00ffff"
-                    android:paddingRight="15sp"
+                    android:gravity="right|bottom"
                     android:paddingBottom="15sp"
-                    />
+                    android:paddingRight="15sp"
+                    android:text="HIS"
+                    android:textSize="30sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -280,11 +294,11 @@
             android:layout_marginLeft="10dp"
             android:background="#00ffff"
             android:gravity="right|bottom"
-            android:text="="
-            android:textSize="30sp"
-            android:paddingRight="15sp"
             android:paddingBottom="15sp"
-            />
-
+            android:paddingRight="15sp"
+            android:text="="
+            android:textSize="30sp" />
     </LinearLayout>
+
 </LinearLayout>
+
